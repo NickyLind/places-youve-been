@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Places You've been_
 
-#### _{Brief description of application}_
+#### _This application takes in information about places you've been and worthwhile things to note about these locations_
 
 #### By _**Nicholas Lindau and Morgan Bradford**_
 
@@ -14,15 +14,16 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application stores places along with location, landmarks, time of year, and additional notes into the page and allows user to find them by id_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _HTML_
+* _Javascript_
+* _CSS_
+* _Bootsrap_
+* _Jquery_
+* _Visual Studio Code_
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
