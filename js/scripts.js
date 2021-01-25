@@ -33,7 +33,6 @@ PlacesIveBeen.prototype.findPlace = function(id) {
 }
 
 // Business Logic for Place ------
-
 function Place(location, landmarks, timeOfYear, notes)  {
   this.location = location;
   this.landmarks = landmarks;
@@ -48,3 +47,14 @@ Place.prototype.update = function() {
   this.notes = notes;
 }
 
+$(document).ready(function()  {
+  $("#places").submit(function(event) {
+    event.preventDefault();
+
+location = $("#location").val();
+landmark = $("#landmark").val();
+timeOfYear = $("#timeOfYear").val();
+notes = $("#notes").val();
+
+  });
+});
