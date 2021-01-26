@@ -8,6 +8,11 @@
 
 // Business Logic for PlacesIveBeen -----
 
+// // let price = 5.00$
+// if age > 12 || age < 65,  price = price + 2.00
+//   else if (matinee = false) price = price +3.00
+//   else if (newMovie = true) price = price + 2.00
+
 function  PlacesIveBeen() {
   this.places = {};
   this.currentId = 0;
