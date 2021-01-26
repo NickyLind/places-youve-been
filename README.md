@@ -29,9 +29,17 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specifications
 ```
-Describe: 
 
-}
+Describe: PlacesIveBeen()
+Test: "It will allow"
+Expect:
+
+
+Test: "It will add a place to placesIveBeen"
+Expect: placesIveBeen.addPlace(placeOne)toEqual(addressBook currentId: 1);
+
+
+
 
 ## Known Bugs
 

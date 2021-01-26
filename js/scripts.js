@@ -13,8 +13,6 @@ function  PlacesIveBeen() {
   this.currentId = 0;
 }
 
-let placesIveBeen = new PlacesIveBeen();
-
 PlacesIveBeen.prototype.addPlace = function(place)  {
   place.id = this.assignId();
   this.places[place.id] = place;
@@ -46,15 +44,19 @@ Place.prototype.update = function() {
   this.timeOfYear = timeOfYear;
   this.notes = notes;
 }
+// User Interface Logic
+let placesIveBeen = new PlacesIveBeen();
 
 $(document).ready(function()  {
   $("#places").submit(function(event) {
     event.preventDefault();
 
-location = $("#location").val();
-landmark = $("#landmark").val();
-timeOfYear = $("#timeOfYear").val();
-notes = $("#notes").val();
-
+const inputLocation = $("#location").val();
+const inputLandmark = $("#landmark").val();
+const inputTimeOfYear = $("#timeOfYear").val();
+const inputNotes = $("#notes").val();
+let newPlace = new Place(inputLocation, inputLandmark, inputTimeOfYear, inputNotes)
+placesIveBeen.addPlace(newPlace);
+console.log(placesIveBeen.places);
   });
 });
